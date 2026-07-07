@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Actividades e iniciativas — ConnectEd</title>
+  <meta name="description" content="Descubre las actividades del mes: talleres, círculos de conversación, charlas para padres y jornadas de bienestar. Inscríbete gratis." />
+  <link rel="stylesheet" href="/static/css/styles.css?v=1.0">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="section container">
+      <div style="max-width:640px;">
+        <span class="chip">Actividades e iniciativas</span>
+        <h1 class="section-title mt-6">Dos actividades cada mes, pensadas para ti</h1>
+        <p class="section-lead">
+          Espacios prácticos y cercanos para reflexionar, aprender herramientas y conectar
+          con otros. La inscripción es gratuita y confidencial.
+        </p>
+      </div>
+
+      <div class="grid-cards">
+        <article class="activity">
+          <div class="activity-cover"></div>
+          <div class="activity-body">
+            <h2 style="font-size:22px;font-weight:600;">Taller: Manejo del estrés escolar</h2>
+            <div class="meta">
+              <span>📅 sábado 12 de julio</span>
+              <span>📍 Auditorio principal</span>
+            </div>
+            <div class="meta">
+              <span class="pill">⏱ 10:00</span>
+              <span class="pill">⏱ 15:00</span>
+            </div>
+            <p class="text-muted mt-4" style="font-size:14px;">
+              Un espacio para reconocer las señales del estrés y aprender herramientas
+              simples para regular tus emociones antes de un examen o entrega importante.
+            </p>
+            <p class="mt-4" style="font-size:14px;"><strong>Objetivo:</strong>
+              <span class="text-muted">Salir con al menos tres técnicas concretas para aplicar en la semana.</span>
+            </p>
+            <button class="btn btn-primary mt-6" onclick="openModal('modal-register')">INSCRÍBETE AQUÍ</button>
+          </div>
+        </article>
+
+        <article class="activity">
+          <div class="activity-cover"></div>
+          <div class="activity-body">
+            <h2 style="font-size:22px;font-weight:600;">Círculo para padres: escuchar sin corregir</h2>
+            <div class="meta">
+              <span>📅 domingo 27 de julio</span>
+              <span>📍 Virtual (Zoom)</span>
+            </div>
+            <div class="meta">
+              <span class="pill">⏱ 18:00</span>
+            </div>
+            <p class="text-muted mt-4" style="font-size:14px;">
+              Un encuentro para conversar con otros padres y aprender a acompañar
+              emocionalmente a los adolescentes sin caer en la crítica.
+            </p>
+            <p class="mt-4" style="font-size:14px;"><strong>Objetivo:</strong>
+              <span class="text-muted">Fortalecer la escucha empática en casa.</span>
+            </p>
+            <button class="btn btn-primary mt-6" onclick="openModal('modal-register')">INSCRÍBETE AQUÍ</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de inscripción -->
+  <div class="modal-backdrop" id="modal-register" onclick="if(event.target===this)closeModal('modal-register')">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <div class="kicker">Inscripción</div>
+          <h3>Actividad ConnectEd</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('modal-register')" aria-label="Cerrar">✕</button>
+      </div>
+      <form class="form" onsubmit="event.preventDefault();alert('¡Inscripción registrada! (versión HTML demo)');closeModal('modal-register');">
+        <label><span>Nombres</span><input required /></label>
+        <label><span>Apellidos</span><input required /></label>
+        <div class="row-2">
+          <label><span>DNI</span><input required /></label>
+          <label><span>Edad</span><input type="number" required /></label>
+        </div>
+        <label><span>Colegio al que perteneces</span><input required /></label>
+        <label><span>Horario que asistirás</span>
+          <select><option>10:00</option><option>15:00</option><option>18:00</option></select>
+        </label>
+        <div class="row-2">
+          <label><span>Email (opcional)</span><input type="email" /></label>
+          <label><span>Teléfono (opcional)</span><input /></label>
+        </div>
+        <p class="form-note">🔒 Tus datos son confidenciales y solo se usarán para gestionar tu participación en esta actividad.</p>
+        <button type="submit" class="btn btn-primary" style="justify-content:center;">Confirmar inscripción</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <div id="chat-widget"></div>
+  <script src="/partials.js?v=1.0"></script>
+</body>
+</html>

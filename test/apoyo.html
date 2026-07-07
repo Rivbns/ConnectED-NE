@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apoyo psicológico — ConnectEd</title>
+  <meta name="description" content="Habla con un psicólogo certificado, de forma virtual o presencial. Confidencial, seguro y en tus tiempos." />
+  <link rel="stylesheet" href="/static/css/styles.css?v=1.0" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="section container">
+      <div style="max-width:640px;">
+        <span class="chip">🛡 Apoyo psicológico</span>
+        <h1 class="section-title mt-6">Un espacio seguro para hablar cuando lo necesites</h1>
+        <p class="section-lead">
+          Si estás pasando por una situación difícil en el colegio, con amistades, con tu familia
+          o simplemente te sientes decaído, puedes conversar con uno de nuestros psicólogos
+          certificados. Cada uno se presenta antes de comenzar para que decidas con quién te
+          sientes cómodo.
+        </p>
+        <div class="badge-row">
+          <span class="badge">100% confidencial</span>
+          <span class="badge">Virtual o presencial</span>
+          <span class="badge">Equipo en crecimiento</span>
+        </div>
+      </div>
+
+      <div class="grid-cards grid-3">
+        <article class="psy-card">
+          <div class="psy-body">
+            <div style="display:flex;gap:16px;align-items:center;">
+              <div style="width:64px;height:64px;border-radius:18px;background:rgba(47,90,168,.1);color:var(--primary);display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:18px;">MR</div>
+              <div>
+                <h2 style="font-size:18px;font-weight:600;">Mariana Rojas</h2>
+                <p class="text-muted" style="font-size:14px;">Psicóloga clínica</p>
+              </div>
+            </div>
+            <p class="text-muted mt-4" style="font-size:14px;">Acompaño a adolescentes en momentos de ansiedad, autoestima y transiciones difíciles con una mirada cálida y sin juicios.</p>
+            <div class="mt-4" style="display:flex;flex-wrap:wrap;gap:6px;">
+              <span class="pill" style="background:var(--primary-soft);color:var(--primary);border-radius:999px;padding:2px 10px;font-size:12px;">Ansiedad</span>
+              <span class="pill" style="background:var(--primary-soft);color:var(--primary);border-radius:999px;padding:2px 10px;font-size:12px;">Autoestima</span>
+            </div>
+            <div class="mt-4 text-muted" style="font-size:12px;">🏅 Colegio de Psicólogos del Perú · CPsP 12345</div>
+            <div class="text-muted" style="font-size:12px;">📹 Atiende: virtual y presencial</div>
+            <button class="btn btn-primary mt-6" style="justify-content:center;width:100%;" onclick="openModal('modal-support')">Solicitar conversación</button>
+          </div>
+        </article>
+
+        <article class="psy-card">
+          <div class="psy-body">
+            <div style="display:flex;gap:16px;align-items:center;">
+              <div style="width:64px;height:64px;border-radius:18px;background:rgba(47,90,168,.1);color:var(--primary);display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:18px;">DL</div>
+              <div>
+                <h2 style="font-size:18px;font-weight:600;">Diego Luna</h2>
+                <p class="text-muted" style="font-size:14px;">Psicólogo educativo</p>
+              </div>
+            </div>
+            <p class="text-muted mt-4" style="font-size:14px;">Trabajo con escolares y familias en presión académica, motivación y comunicación asertiva.</p>
+            <div class="mt-4" style="display:flex;flex-wrap:wrap;gap:6px;">
+              <span class="pill" style="background:var(--primary-soft);color:var(--primary);border-radius:999px;padding:2px 10px;font-size:12px;">Motivación</span>
+              <span class="pill" style="background:var(--primary-soft);color:var(--primary);border-radius:999px;padding:2px 10px;font-size:12px;">Familia</span>
+            </div>
+            <div class="mt-4 text-muted" style="font-size:12px;">🏅 Colegio de Psicólogos del Perú · CPsP 22981</div>
+            <div class="text-muted" style="font-size:12px;">📍 Atiende: presencial</div>
+            <button class="btn btn-primary mt-6" style="justify-content:center;width:100%;" onclick="openModal('modal-support')">Solicitar conversación</button>
+          </div>
+        </article>
+
+        <article class="psy-card">
+          <div class="psy-body">
+            <div style="display:flex;gap:16px;align-items:center;">
+              <div style="width:64px;height:64px;border-radius:18px;background:rgba(47,90,168,.1);color:var(--primary);display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:18px;">SA</div>
+              <div>
+                <h2 style="font-size:18px;font-weight:600;">Sofía Álvarez</h2>
+                <p class="text-muted" style="font-size:14px;">Psicoterapeuta</p>
+              </div>
+            </div>
+            <p class="text-muted mt-4" style="font-size:14px;">Especializada en duelo, cambios y relaciones interpersonales. Escucho sin apurarte.</p>
+            <div class="mt-4" style="display:flex;flex-wrap:wrap;gap:6px;">
+              <span class="pill" style="background:var(--primary-soft);color:var(--primary);border-radius:999px;padding:2px 10px;font-size:12px;">Duelo</span>
+              <span class="pill" style="background:var(--primary-soft);color:var(--primary);border-radius:999px;padding:2px 10px;font-size:12px;">Relaciones</span>
+            </div>
+            <div class="mt-4 text-muted" style="font-size:12px;">🏅 Colegio de Psicólogos del Perú · CPsP 30475</div>
+            <div class="text-muted" style="font-size:12px;">📹 Atiende: virtual</div>
+            <button class="btn btn-primary mt-6" style="justify-content:center;width:100%;" onclick="openModal('modal-support')">Solicitar conversación</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="card mt-8" style="margin-top:64px;background:var(--surface-elevated);">
+        <h2 style="font-size:22px;font-weight:600;">¿Y si no sé con quién hablar aún?</h2>
+        <p class="text-muted mt-4">
+          No te preocupes. Puedes llenar la solicitud sin elegir un psicólogo específico y
+          nuestro equipo coordinará contigo. Todos nuestros profesionales están certificados
+          por el Colegio de Psicólogos del Perú y siguen un código de confidencialidad estricto.
+        </p>
+        <button class="btn btn-outline mt-6" onclick="openModal('modal-support')">Solicitar apoyo general</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal apoyo -->
+  <div class="modal-backdrop" id="modal-support" onclick="if(event.target===this)closeModal('modal-support')">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <div class="kicker">Solicitud de apoyo</div>
+          <h3>Conversación con un psicólogo</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('modal-support')" aria-label="Cerrar">✕</button>
+      </div>
+      <form class="form" onsubmit="event.preventDefault();alert('¡Solicitud enviada! (versión HTML demo)');closeModal('modal-support');">
+        <div class="row-2">
+          <label><span>Nombres</span><input required /></label>
+          <label><span>Apellidos</span><input required /></label>
+        </div>
+        <div class="row-2">
+          <label><span>DNI</span><input required /></label>
+          <label><span>Edad</span><input type="number" required /></label>
+        </div>
+        <label><span>Colegio (opcional)</span><input /></label>
+        <div class="row-2">
+          <label><span>Email</span><input type="email" required /></label>
+          <label><span>Teléfono (opcional)</span><input /></label>
+        </div>
+        <label><span>Modalidad preferida</span>
+          <select><option value="virtual">Virtual</option><option value="presencial">Presencial</option></select>
+        </label>
+        <label>
+          <span>Cuéntanos brevemente en qué te podemos ayudar</span>
+          <textarea rows="4" placeholder="Puedes ser tan breve o tan detallado como te sientas cómodo." required></textarea>
+        </label>
+        <p class="form-note">🔒 Confidencialidad garantizada. Solo el psicólogo asignado y la coordinación verán tu solicitud.</p>
+        <button type="submit" class="btn btn-primary" style="justify-content:center;">Enviar solicitud</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <div id="chat-widget"></div>
+  <script src="/partials.js?v=1.0"></script>
+</body>
+</html>
